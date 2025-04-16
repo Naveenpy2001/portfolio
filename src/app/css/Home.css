@@ -472,11 +472,11 @@
 
 .intro-greeting::after{
   content: '';
-  height: 2px;
-  width: 10%;
+  height: 1px;
+  width: 30%;
   position: absolute;
-  bottom: 10px;
-  margin-left: 6px;
+  bottom: 8px;
+  margin-left: 5px;
   background-color: #fff;
 }
 

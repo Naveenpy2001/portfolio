@@ -1,4 +1,5 @@
 "use client";
+import { useEffect } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./css/animation.css";
 
@@ -11,7 +12,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
 
 export default function RootLayout({ children, bgColor = "red" }) {
   useEffect(() => {
