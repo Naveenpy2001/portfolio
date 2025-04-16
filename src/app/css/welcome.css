@@ -1,0 +1,72 @@
+/* styles/welcome-loader.css */
+.welcome-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  /* Background slices */
+  .background-slice {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #000;
+    transition: transform 0.7s cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  
+  .top-slice {
+    top: 0;
+    transform: translateY(0);
+  }
+  
+  .bottom-slice {
+    bottom: 0;
+    transform: translateY(0);
+  }
+  
+  /* Slicing animation */
+  .welcome-loader.slicing .top-slice {
+    transform: translateY(-100%);
+  }
+  
+  .welcome-loader.slicing .bottom-slice {
+    transform: translateY(100%);
+  }
+  
+  /* Fade out animation */
+  .welcome-loader.fade-out {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+  }
+  
+  /* Words animation */
+  .words-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .welcome-word {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+  
+  .welcome-word.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }

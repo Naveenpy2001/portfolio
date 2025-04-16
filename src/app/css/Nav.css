@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
+html{
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-variation-settings: "wdth" 100;
+  font-optical-sizing: auto;
+  font-family: "Poppins", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 40px;
+  width: 100%;
+  z-index: 9999;
+  height: 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.nkLogo {
+  width: 30px;
+  height: auto;
+  border-radius: 2px;
+}
+
+.header nav {
+  display: flex;
+  width: 80%;
+  padding: 15px 30px;
+  background-color: #ffffffb9;
+  backdrop-filter: blur(12px);
+  border-radius: 500px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 10px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  position: relative;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  padding: 5px 0;
+  transition: color 0.3s ease-in-out;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, red, blue);
+  transition: width 0.3s ease-in-out;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.link:not(:hover)::after {
+  width: 0;
+  left: auto;
+  right: 0;
+}
+.burger {
+  display: none;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 30px;
+  color: #000;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .header nav {
+    width: 92%;
+    padding: 10px 20px;
+    border-radius: 1px;
+    box-shadow: 0 1px 10px 8px rgba(104, 104, 104, 0.1);
+    border: 1px solid #b5b5b5;
+  }
+
+  .navLinks {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .navLinks.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .close-icon {
+    color: #ff4500;
+  }
+}

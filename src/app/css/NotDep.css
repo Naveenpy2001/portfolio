@@ -1,0 +1,75 @@
+/* Container */
+.not-deployed-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Highlighted Message */
+  .highlighted-message {
+    background: #fff3cd; /* Light yellow background */
+    border: 1px solid #ffeeba; /* Yellow border */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .highlighted-message h2 {
+    color: #856404; /* Dark yellow text */
+    margin-top: 0;
+  }
+  
+  .highlighted-message p {
+    color: #856404; /* Dark yellow text */
+    font-size: 16px;
+  }
+  
+  /* Instructions */
+  .instructions {
+    text-align: left;
+  }
+  
+  .instructions h3 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .step {
+    margin-bottom: 30px;
+  }
+  
+  .step-icon {
+    color: #0070f3; /* Blue icon color */
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .step h4 {
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .step p {
+    color: #555;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .step code {
+    display: block;
+    background: #f8f9fa; /* Light gray background */
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  /* Footer */
+  .footer {
+    margin-top: 40px;
+    color: #777;
+    font-size: 14px;
+  }

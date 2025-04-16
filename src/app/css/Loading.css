@@ -1,0 +1,92 @@
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Fullscreen Black Background (Initial State) */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  overflow: hidden;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Rotating Text Wrapper */
+.rotating-text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+}
+
+/* Text Animation */
+.rotating-text-lang {
+  font-size: 5rem;
+  font-weight: 200;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  /* animation: slideDown 0.2s ease-in-out; */
+  animation: slideDown 0.2s ease-in-out;
+}
+
+/* Text Moves Down */
+@keyframes slideDown {
+  0% { transform: translateY(-100%); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* --- SPLITTING PANELS --- */
+.split-panel {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: white;
+  transition: transform .75s ease-in-out;
+}
+
+/* Initially Panels Are Hidden */
+.left {
+  left: 50%;
+  transform: translateX(0);
+}
+
+.right {
+  right: 50%;
+  transform: translateX(0);
+}
+
+/* Panels Move Outwards for Split Effect */
+.split-active .left {
+  transform: translateX(-100%);
+}
+
+.split-active .right {
+  transform: translateX(100%);
+}
+
+/* Finally, Fade Everything Out */
+.split-active {
+  opacity: 0;
+  transition: opacity 1s ease-in-out 1s;
+}
+
+@media (max-width: 400px) {
+  .rotating-text-lang {
+    font-size: 3rem;
+    font-weight: 200;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    /* animation: slideDown 0.2s ease-in-out; */
+    animation: slideDown 0.2s ease-in-out;
+  }
+}

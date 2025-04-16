@@ -1,95 +1,62 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+
+import { useState, useEffect } from "react";
+import HeroSec from "./components/HeroSec";
+import AboutSection from "./components/AboutMe";
+import "./css/Home.css";
+import SkillsSet from "./components/SkillsSet";
+import Timeline from "./components/TimeLine";
+import Projects from "./components/Projects";
+import ContactPage from "./components/ContactUs";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollTop";
+import ScrollProgressBar from "./components/ScrillBar";
+import LoadingScreen from "./components/Loading";
+import CursorFollower from "./components/CursorFollower";
+import Gallery from "./components/Gallery";
+import NavBar from "./components/NavBar";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const [isLoading, setIsLoading] = useState(true);
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+  useEffect(() => {
+    // Wait for the loading animation to finish (based on its timing)
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2500); // Matches total animation duration
+
+    return () => clearTimeout(timer);
+  }, []);
+  return isLoading ? (
+    <LoadingScreen />
+  ) : (
+    <>
+      <NavBar />
+      <ScrollProgressBar />
+      <CursorFollower />
+      <section id="home">
+        <HeroSec />
+      </section>
+      <section id="about">
+        <AboutSection />
+      </section>
+      <ScrollToTop />
+      <section>
+        <SkillsSet />
+      </section>
+      <section>
+        <Timeline />
+      </section>
+      <section>
+        <Projects />
+      </section>
+      <section>
+        <Gallery />
+      </section>
+      <section id="contact">
+        <ContactPage />
+      </section>
+      <Footer />
+    </>
   );
 }

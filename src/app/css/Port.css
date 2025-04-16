@@ -1,0 +1,110 @@
+/* Background Styling */
+.portfolio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e40af, #9333ea);
+    color: white;
+    padding: 20px;
+  }
+  
+  /* Main Content Styling */
+  .portfolio-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    gap: 40px;
+  }
+  
+  /* Text Section */
+  .intro-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .name {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .name span {
+    color: #facc15;
+  }
+  
+  .role {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #d1d5db;
+    display: inline-block;
+    border-right: 3px solid white;
+    padding-right: 5px;
+    animation: blink 0.7s step-end infinite;
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+  
+  /* Description */
+  .description {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #e5e7eb;
+    line-height: 1.5;
+  }
+  
+  /* Hire Me Button */
+  .hire-btn {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #facc15, #f97316);
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    color: #1e293b;
+  }
+  
+  .hire-btn:hover {
+    background: linear-gradient(135deg, #f97316, #facc15);
+    transform: scale(1.05);
+  }
+  
+  /* Social Links */
+  .social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    color: white;
+    font-size: 2rem;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+    color: #facc15;
+  }
+  
+  /* Developer Image */
+  .developer-image img {
+    width: 320px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .developer-image img:hover {
+    transform: scale(1.05);
+  }
+  
