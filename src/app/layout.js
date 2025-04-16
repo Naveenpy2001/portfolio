@@ -14,38 +14,38 @@ const geistMono = Geist_Mono({
 
 
 export default function RootLayout({ children, bgColor = "red" }) {
-  // useEffect(() => {
-  //   // Disable right-click
-  //   const disableContextMenu = (event) => event.preventDefault();
-  //   document.addEventListener("contextmenu", disableContextMenu);
+  useEffect(() => {
+    // Disable right-click
+    const disableContextMenu = (event) => event.preventDefault();
+    document.addEventListener("contextmenu", disableContextMenu);
 
-  //   // Disable DevTools shortcuts
-  //   const disableDevTools = (event) => {
-  //     if (
-  //       event.ctrlKey &&
-  //       (event.key === "u" ||
-  //         event.key === "U" ||
-  //         event.key === "i" ||
-  //         event.key === "I") // Ctrl+U, Ctrl+I
-  //     ) {
-  //       event.preventDefault();
-  //     }
+    // Disable DevTools shortcuts
+    const disableDevTools = (event) => {
+      if (
+        event.ctrlKey &&
+        (event.key === "u" ||
+          event.key === "U" ||
+          event.key === "i" ||
+          event.key === "I") // Ctrl+U, Ctrl+I
+      ) {
+        event.preventDefault();
+      }
 
-  //     if (
-  //       event.key === "F12" ||
-  //       (event.ctrlKey && event.shiftKey && event.key === "I")
-  //     ) {
-  //       event.preventDefault();
-  //     }
-  //   };
+      if (
+        event.key === "F12" ||
+        (event.ctrlKey && event.shiftKey && event.key === "I")
+      ) {
+        event.preventDefault();
+      }
+    };
 
-  //   document.addEventListener("keydown", disableDevTools);
+    document.addEventListener("keydown", disableDevTools);
 
-  //   return () => {
-  //     document.removeEventListener("contextmenu", disableContextMenu);
-  //     document.removeEventListener("keydown", disableDevTools);
-  //   };
-  // }, []);
+    return () => {
+      document.removeEventListener("contextmenu", disableContextMenu);
+      document.removeEventListener("keydown", disableDevTools);
+    };
+  }, []);
 
   return (
     <html lang="en">
