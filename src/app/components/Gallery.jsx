@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import '../css/gallery.css';
+import SectionBox from './NameComponent';
 
 
 export default function Gallery() {
@@ -48,6 +49,8 @@ export default function Gallery() {
   const visibleImages = images.slice(0, displayCount);
 
   return (
+    <>
+    <SectionBox title={"Mobile Photography"} description={"Capturing creativity, light, and moments through the lens of a smartphone"} borderColor={"#00BFFF"}/>
     <div className="gallery-container">
       <div className="gallery-controls">
         <select
@@ -122,5 +125,6 @@ export default function Gallery() {
         </div>
       )}
     </div>
+    </>
   );
 }

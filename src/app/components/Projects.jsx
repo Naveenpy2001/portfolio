@@ -5,6 +5,15 @@ import SectionBox from './NameComponent';
 const Projects = () => {
   const projectsData = [
     {
+      title: 'Internship Frontend',
+      description:
+        'A platform for students to find internships, apply for positions, and connect with companies.',
+      technologies: ['React.js', 'CSS', 'MySQL','Django REST Framework'],
+      image: '/internship.png',
+      liveDemo: 'https://internship.tsaritservices.com/',
+      githubRepo: 'https://github.com/Naveenpy2001/internship.git',
+    },
+    {
       title: 'HMS Frontend & Backend',
       description:
         'A hospital management system with authentication, patient registration, and medical record tracking.',
@@ -30,15 +39,6 @@ const Projects = () => {
       image: '/images/nextera.png',
       liveDemo: '',
       githubRepo: 'https://github.com/Naveenpy2001/NextEra',
-    },
-    {
-      title: 'Internship Frontend',
-      description:
-        'A platform for students to find internships, apply for positions, and connect with companies.',
-      technologies: ['React.js', 'CSS', 'MySQL'],
-      image: '/images/internship.png',
-      liveDemo: '',
-      githubRepo: 'https://github.com/Naveenpy2001/internship.git',
     },
   ];
 

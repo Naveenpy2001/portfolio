@@ -27,13 +27,13 @@
   
   @media (max-width: 600px) {
     .scrollToTop {
-      bottom: 14px;
-      right: 14px;
-      padding: 8px;
+      bottom: 25px;
+      right: 22px;
+      padding: 14px;
     }
     .scrollIcon {
         color: white;
-        font-size: 12px;
+        font-size: 14px;
       }
   }
   

@@ -18,10 +18,13 @@ export default function UploadPage() {
         const response = await fetch('/api/images');
         if (!response.ok) throw new Error('Failed to fetch images');
         const data = await response.json();
-        setUploadedImages(data.map(img => ({
-          ...img,
-          uniqueKey: img._id || img.id || Math.random().toString(36).substring(2, 9)
-        })));
+        setUploadedImages(
+          (data.images || []).map(img => ({
+            ...img,
+            uniqueKey: img._id || img.id || Math.random().toString(36).substring(2, 9)
+          }))
+        );
+        
       } catch (err) {
         console.error('Fetch error:', err);
         setError('Failed to load images');

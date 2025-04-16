@@ -12,20 +12,20 @@ export default function Footer() {
             <h2 className="footer-logo">Naveen Kumar</h2>
             <p className="footer-tagline">Creating beautiful digital experiences</p>
             <div className="social-links">
-              <a href="https://github.com/yourusername" aria-label="GitHub">
-                <FaGithub className="social-icon" />
+              <a href="https://github.com/Naveenpy2001" aria-label="GitHub">
+                <FaGithub className="social-icon-f" />
               </a>
-              <a href="https://linkedin.com/in/yourusername" aria-label="LinkedIn">
-                <FaLinkedin className="social-icon" />
+              <a href="https://www.linkedin.com/in/naveen-kumar-aaa985252/" aria-label="LinkedIn">
+                <FaLinkedin className="social-icon-f" />
               </a>
               <a href="https://twitter.com/yourusername" aria-label="Twitter">
-                <FaTwitter className="social-icon" />
+                <FaTwitter className="social-icon-f" />
               </a>
               <a href="https://instagram.com/yourusername" aria-label="Instagram">
-                <FaInstagram className="social-icon" />
+                <FaInstagram className="social-icon-f" />
               </a>
-              <a href="mailto:youremail@example.com" aria-label="Email">
-                <FaEnvelope className="social-icon" />
+              <a href="mailto:naveenpoolakuntla09@gmail.com" aria-label="Email">
+                <FaEnvelope className="social-icon-f" />
               </a>
             </div>
           </div>
@@ -34,10 +34,10 @@ export default function Footer() {
             <h3 className="links-title">Quick Links</h3>
             <ul className="links-list">
               <li><Link href="/" className="footer-link">Home</Link></li>
-              <li><Link href="/about" className="footer-link">About</Link></li>
-              <li><Link href="/projects" className="footer-link">Projects</Link></li>
-              <li><Link href="/blog" className="footer-link">Blog</Link></li>
-              <li><Link href="/contact" className="footer-link">Contact</Link></li>
+              <li><Link href="#about" className="footer-link">About</Link></li>
+              <li><Link href="#projects" className="footer-link">Projects</Link></li>
+              <li><Link href="#blog" className="footer-link">Blog</Link></li>
+              <li><Link href="#contact" className="footer-link">Contact</Link></li>
             </ul>
           </div>
 

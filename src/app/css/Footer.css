@@ -47,16 +47,16 @@
   gap: 1rem;
 }
 
-.social-icon {
-  font-size: 1.2rem;
+.social-icon-f {
+  font-size: 1.6rem;
   color: #fff;
   transition: all 0.3s ease;
   opacity: 0.8;
 }
 
-.social-icon:hover {
+.social-icon-f:hover {
   opacity: 1;
-  transform: translateY(-3px);
+  transform: translateY(-5px);
 }
 
 .links-title, .newsletter-title {

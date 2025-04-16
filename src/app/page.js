@@ -47,7 +47,7 @@ export default function Home() {
       <section>
         <Timeline />
       </section>
-      <section>
+      <section id="projects">
         <Projects />
       </section>
       <section>

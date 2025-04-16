@@ -3,6 +3,7 @@ import '../css/Contact.css'
 import {useState} from 'react';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react-icons/fa'; // Icons for contact details
 import SectionBox from './NameComponent';
+import { TfiEmail } from "react-icons/tfi";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -38,11 +39,12 @@ const ContactPage = () => {
         <div className="contact-details slide-left">
           <h2 className='heading-ct'>Drop a Message!</h2>
           <p className='descct'>Get in touch and let me know if i can help! Fill out the form and I'll be in touch as soon as possible</p>
+         
           <div className="detail-item">
             <FaEnvelope className="icon-ct" />
             <div className="ct-ct">
-            <h2>Email :</h2>
-            <p><a href="mailto:naveenpoolakuntla09@gmail.com">naveenpoolakuntla09@gmail.com</a></p>
+              <h2>Email :</h2>
+              <p><a href="mailto:naveenpoolakuntla09@gmail.com">naveenpoolakuntla09@gmail.com</a></p>
             </div>
           </div>
           <div className="detail-item">
@@ -59,17 +61,10 @@ const ContactPage = () => {
               <p>Madanapalle, Andhra Pradesh, India - 517325</p>
             </div>
           </div>
-          <div className="social-links">
-            <a href="https://www.linkedin.com/in/naveen-kumar-aaa985252/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="social-icon" />
-            </a>
-            <a href="https://github.com/Naveenpy2001" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="social-icon" />
-            </a>
-          </div>
+         
         </div>
 
-        <div className="contact-form slide-right">
+        <div className="contact-form">
           <h2>Send a Message</h2>
           <form onSubmit={handleSubmit}>
             <div className="form-group">

@@ -1,83 +1,32 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
-
-
-.text-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    height: auto;
-    font-size: 28px;
-    font-weight: bold;
-    overflow: hidden;
+.section-title{
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+.section-caption{
+  font-size: 14px;
+  color: rgb(85, 85, 85);
+  font-style: italic;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+@media (max-width:500px) {
+  .section-title{
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 2px;
     position: relative;
-    min-width: 350px;
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 10px;
-  }
-
-  .orangeBg{
-    height: 60px;
-    min-width: 500px;
-  }
-  
-  /* Rotating Text */
-  .rotating-text {
-    position: absolute;
-    white-space: nowrap;
-    font-weight: 600;
-    height: 60px;
-    font-family: "Press Start 2P", system-ui;
-    font-size: 24px;
-    color: #000;
-  }
-  
-
-  /* Blur Text Words */
-  .blur-text-word {
     display: inline-block;
-    font-size: 60px;
-    color: #000000;
-    font-weight: 400;
-    font-family: "Rock Salt", cursive;
-    font-family: "Ephesis", cursive;
-    font-family: "Bilbo Swash Caps", cursive;
-    font-family: "Bonheur Royale", cursive;
-    /* text-shadow: 2px 2px 9px #1f1f1fd2; */
-    font-family: "DM Serif Display", serif;
-    font-style: normal;
+  }
+  .section-caption{
+    font-size: 16px;
+    color: rgb(85, 85, 85);
     font-style: italic;
+    margin-top: 20px;
   }
-  
-  @media (max-width: 768px) {
+}
 
-    .blur-text-word {
-      display: inline-block;
-      font-size: 45px;
-      color: #000000;
-      font-weight: 900;  
-      text-shadow: 2px 2px 9px #141414;    
-  }
-
-  .orangeBg{
-    height: 60px;
-    min-width: 300px;
-    justify-content: center;
-  }
-  .rotating-text{
-    font-size: 25px;
-    color: #030303;
-    font-family: "Raleway", sans-serif; 
-    text-shadow: 2px 2px 9px #000000;
-    font-style: italic;
-    font-optical-sizing: auto;    
-  }
-
-  }

@@ -1,6 +1,8 @@
 .projects-section {
     padding: 4rem 2rem;
-    background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+    background: linear-gradient(135deg, #14102a, #231945);
+    background: #3D3D3D;
+    background: #2E3133;
     text-align: center;
   }
   
@@ -35,7 +37,7 @@
   
   .project-card {
     background: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -77,10 +79,10 @@
   }
   
   .tech-tag {
-    background: #007acc;
+    background: #0d013e;
     color: #fff;
     padding: 0.25rem 0.5rem;
-    border-radius: 4px;
+    border-radius: 2px;
     font-size: 0.9rem;
   }
   

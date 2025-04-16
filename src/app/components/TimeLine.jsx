@@ -36,7 +36,7 @@ const Timeline = () => {
         </div>
 
         {/* Future Role with Icon */}
-        <div className="timeline-item right appeared">
+        <div className="timeline-item right appeared" style={{display:'none'}}>
           <div className="timeline-content appeared">
             <div className="timeline-date appeared">Expected Start: 01/01/2025</div>
             <h3>Senior Frontend Developer</h3>

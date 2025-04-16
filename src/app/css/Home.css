@@ -18,6 +18,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 /* Hero Section */
 .hero-container {
@@ -100,7 +101,7 @@
 /* Social Media Icons */
 .social-icons {
   position: absolute;
-  top: 80%;
+  top: 75%;
   left: 40px;
   transform: translateY(-50%);
   display: flex;
@@ -120,11 +121,11 @@
 } */
 .social-icons::before {
   content: "";
-  height: 170px;
+  height: 130px;
   width: 9%;
   background-color: #fff;
   position: absolute;
-  top: -185px;
+  top: -145px;
   left: 18px;
 }
 
@@ -192,7 +193,7 @@
 .side-social-sidebar {
   position: absolute;
   right: 20px;
-  top: 30%;
+  top: 28%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
@@ -202,7 +203,7 @@
 
 .side-social-line {
   width: 3px;
-  height: 150px;
+  height: 120px;
   background-color: #ffffff;
 }
 
@@ -239,7 +240,7 @@
   .hero-container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -247,6 +248,29 @@
     color: #fff;
     padding: 25px;
   }
+  
+.side-scrolldown {
+  display: none;
+    --color: skyblue;
+    --sizeX: 30px;
+    --sizeY: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    width: var(--sizeX);
+    height: var(--sizeY);
+    border: calc(var(--sizeX) / 10) solid var(--color);
+    border-radius: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.intro-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
   .hero-content {
     flex-direction: column-reverse;
     text-align: center;
@@ -296,7 +320,7 @@
 
   .social-icons {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 8px;
     transform: translateY(-50%);
     display: flex;
@@ -316,14 +340,18 @@
   } */
   .social-icons::before {
     content: "";
-    height: 270px;
-    width: 12%;
+    height: 140px;
+    width: 8%;
     background-color: #fff;
     position: absolute;
-    top: -280px;
-    left: 16px;
+    top: -160px;
+    left: 17px;
     border-radius: 10px;
   }
+  .intro-highlight {
+    font-size: 50px;
+    text-transform: capitalize;
+}
 
   .social-icons a {
     color: white;
@@ -348,17 +376,18 @@
 
   .social-icons {
     position: absolute;
-    top: 41.8%;
-    left: 8px;
+    top: 93%;
+    left: 30%;
     transform: translateY(-50%);
     display: flex;
-    flex-direction: column;
+    /* display: none; */
+    flex-direction: row;
     gap: 15px;
     
   }
   .social-icons:before {
     content: "";
-    height: 160px;
+    height: 0;
     width: 8%;
     background-color: #fff;
     position: absolute;
@@ -370,6 +399,8 @@
   color: #00f2fe;
   position: relative;
   display: inline-block;
+  text-transform: capitalize;
+
 }
 
 
@@ -424,7 +455,19 @@
   font-style: italic;
   position: relative;
   font-family: "Rochester", cursive;
-  
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
 }
 
 .intro-greeting::after{
@@ -442,12 +485,27 @@
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 1.1;
+ 
 }
 
 .intro-highlight {
   color: #00f2fe;
   position: relative;
   display: inline-block;
+  font-family: "Roboto Flex", sans-serif;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
 }
 
 .intro-highlight-underline {
@@ -463,13 +521,27 @@
 .intro-role-container {
   min-height: 3.5rem;
   margin-bottom: 1.5rem;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 .intro-role-text {
   font-size: clamp(1.1rem, 4vw, 2.2rem);
   font-weight: 600;
   color: #00f2fe;
-  
+  font-family: "Roboto Flex", sans-serif;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
 }
 
 .intro-role-cursor {
@@ -482,6 +554,7 @@
   line-height: 1.6;
   opacity: 0.9;
   max-width: 600px;
+  text-transform: capitalize;
 }
 
 .intro-buttons {
@@ -506,7 +579,7 @@
   display: inline-block;
   background: transparent;
   color: white;
-  padding: 0.75rem 1.75rem;
+  padding: 0.75rem 2rem;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
@@ -567,14 +640,36 @@
     flex-direction: column;
     align-items: center;
   }
-  
+  .intro-highlight {
+    font-size: 28px;
+    text-transform: capitalize;
+  }
   .intro-description {
     text-align: center;
+    font-size: 13px;
+    text-transform: capitalize;
   }
   
   .intro-buttons {
     justify-content: center;
   }
+  .intro-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+}
+.intro-button-secondary {
+  display: inline-block;
+  background: none;
+  color: #fff;
+  text-align: center;
+  padding: .50rem .90rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all .3s;
+  border: 2px solid #fff;
+}
   
   .intro-social-icons {
     position: static;
@@ -592,8 +687,6 @@
     max-width: 280px;
   }
 }
-
-
 
 /* scroll down */
 
@@ -648,7 +741,50 @@
     border-width: 0 2px 2px 0;
   }
 }
+@media (max-width:500px){
+  .side-scrolldown {
+    display: none;
+    --color: skyblue;
+    --sizeX: 30px;
+    --sizeY: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    width: var(--sizeX);
+    height: var(--sizeY);
+    border: calc(var(--sizeX) / 10) solid var(--color);
+    border-radius: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.side-social-icon {
+  font-size: 35px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 50%;
+}
+.side-social-sidebar {
+  position: absolute;
+  right: 20px;
+  top: 27%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.intro-highlight {
+  font-size: 34px;
+  text-transform: capitalize;
+}
+.intro-role-text{
+  font-size: 24px;
+}
 
+}
 @keyframes side-scrolldown-anim {
   0% {
     opacity: 0;
@@ -680,7 +816,8 @@
 }
 
 .side-chevrondown {
-  margin-top: -6px;
+  margin-top: -4px;
+  margin-left: 2px;
   position: relative;
   border: solid var(--color);
   border-width: 0 3px 3px 0;

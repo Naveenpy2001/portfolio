@@ -16,6 +16,9 @@ import {SiNextdotjs,SiTailwindcss,SiDjango,SiMysql,SiPycharm,
 } from "react-icons/si";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import SectionBox from "./NameComponent";
+import { SiCelery,SiRedis,SiSublimetext } from "react-icons/si";
+
+
 
 const Skills = () => {
   const skills = {
@@ -31,6 +34,8 @@ const Skills = () => {
       { name: "Python", icon: faPython, className: "sk-python" },
       { name: "Django", icon: SiDjango, className: "sk-django" },
       { name: "Django REST API", icon: SiDjango, className: "sk-drf" }, // Using Django icon for DRF
+      { name: "Celery", icon: SiCelery, className: "sk-celery" },
+      { name: "Redis", icon: SiRedis, className: "sk-redis" },
       { name: "MySQL", icon: SiMysql, className: "sk-mysql" },
     ],
     tools: [
@@ -40,6 +45,7 @@ const Skills = () => {
       { name: "Git", icon: faGitAlt, className: "sk-git" },
       { name: "GitHub", icon: faGithub, className: "sk-github" },
       { name: "VS Code", icon: BiLogoVisualStudio , className: "sk-vscode" },
+      { name: "Sublime", icon: SiSublimetext , className: "sk-sublime" },
     ],
   };
 

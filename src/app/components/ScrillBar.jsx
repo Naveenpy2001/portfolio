@@ -32,7 +32,7 @@ const ScrollProgressBar = () => {
       <div 
         style={{ 
           height: "5px", 
-          backgroundColor: "#fff", 
+          backgroundColor: "red", 
           width: `${scrollPercentage}%`, 
           transition: "width 0.1s ease-in-out" 
         }} 

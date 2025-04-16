@@ -32,7 +32,7 @@ const HeroSec = () => {
   const roles = [
     "Frontend Developer",
     "Backend Developer",
-    "Fullstack Developer",
+    "Full-stack Developer",
   ];
   const [roleIndex, setRoleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -68,7 +68,6 @@ const HeroSec = () => {
 
   return (
     <>
-
       <div className="hero-container">
         {/* scroll down */}
         <div className="side-scrolldown">
@@ -79,9 +78,9 @@ const HeroSec = () => {
         </div>
 
         <div className="side-social-sidebar">
-         <a href="" target="_blank"> <FaTwitter className="side-social-icon side-twitter" /></a>
-          <FaInstagram className="side-social-icon side-instagram" />
-          <FaFacebook className="side-social-icon side-facebook" />
+         <a href="https://x.com/Naveen_09_" target="_blank"> <FaTwitter className="side-social-icon side-twitter" /></a>
+         <a href="https://www.instagram.com/__naveen_.009.__/" target="_blank"><FaInstagram className="side-social-icon side-instagram" /></a>
+         <a href="https://www.facebook.com/naveen.kumar09.009" target="_blank"><FaFacebook className="side-social-icon side-facebook" /></a>
           <div className="side-social-line"></div>
         </div>
 
@@ -123,14 +122,16 @@ const HeroSec = () => {
               </div>
 
               <p className="intro-description fade-item">
-                I design and develop high-performance web applications with
-                modern technologies. Passionate about creating seamless user
-                experiences with clean code and scalable architecture.
+              a passionate Frontend Developer with 1+ year of experience.
+I build responsive, user-friendly web apps using React.js, Next.js.
+I also work with Django REST Framework for backend APIs.
+Always learning, always coding – let’s build something great!
               </p>
 
               <div className="intro-buttons">
                 <motion.a
-                  href="#work"
+                  href="/resume.pdf"
+                  target="_blank"
                   className="intro-button-primary"
                   whileHover={{
                     y: -3,
@@ -138,7 +139,7 @@ const HeroSec = () => {
                     transition: '.2s linear'
                   }}
                 >
-                  View Work 
+                  Download CV
                 </motion.a>
                 <motion.a
                   href="mailto:naveenpoolakuntla09@gmail.com"

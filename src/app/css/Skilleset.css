@@ -115,6 +115,9 @@
   .sk-git .skill-icon { color: #f14e32; }
   .sk-github .skill-icon { color: #333; }
   .sk-vscode .skill-icon { color: #007acc; }
+  .sk-redis .skill-icon { color: #cf2304; }
+  .sk-celery .skill-icon { color: green; }
+  .sk-sublime .skill-icon { color: #ff6f07; }
 
 
   

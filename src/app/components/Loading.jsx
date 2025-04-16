@@ -4,7 +4,7 @@ import "../css/Loading.css";
 import { useState, useEffect } from "react";
 import { FaDesktop, FaMobileAlt } from "react-icons/fa";
 
-const languages = ["Welcome", "Բարի գալուստ", "स्वागत", "ようこそ", "ಸ್ವಾಗತ", "Bienvenido", "Willkommen","స్వాగతం"]; 
+const languages = ["Welcome","ಸ್ವಾಗತ","வரவேற்கிறேன்", "Բարի գալուստ", "स्वागत", "ようこそ", "ยินดีต้อนรับ", "స్వాగతం"]; 
 // English, Telugu, Hindi, Japanese, Kannada, Spanish, German
 
 
