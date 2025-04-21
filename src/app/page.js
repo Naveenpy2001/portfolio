@@ -50,9 +50,6 @@ export default function Home() {
       <section id="projects">
         <Projects />
       </section>
-      <section>
-        <Gallery />
-      </section>
       <section id="contact">
         <ContactPage />
       </section>
