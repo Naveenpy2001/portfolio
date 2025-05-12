@@ -16,11 +16,11 @@ const Projects = () => {
     {
       title: 'HMS Frontend & Backend',
       description:
-        'A hospital management system with authentication, patient registration, and medical record tracking.',
-      technologies: ['React.js', 'CSS', 'MySQL', 'Django REST Framework'],
-      image: '/images/hms.png',
-      liveDemo: '',
-      githubRepo: 'https://github.com/Naveenpy2001/HMS',
+        'A hospital management system with authentication, patient registration, and medical record tracking.etc..',
+      technologies: ['React.js', 'CSS', 'MySQL', 'Django REST Framework','JWT'],
+      image: '/hms.png',
+      liveDemo: 'https://hms.tsaritservices.com/',
+      githubRepo: 'https://github.com/Naveenpy2001/hmst',
     },
     {
       title: 'NGO Frontend',
